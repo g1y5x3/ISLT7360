@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Yixiang Gao's Design Document</title>
+<meta charset="utf-8">
+<style>
+body {font-family: 'Roboto', sans-serif}
+</style>
+</head>
+
+<body>
+
+<h1>Yixiang Gao's Design Document</h1>
+
+<h2>Purpose</h2>
+<p>My goal is to create a portfolio website where, first, I can present my publications, projects, and other informations that are related to my profession as a computer engineer researcher. Second, I also want to post articles that I consider would be useful for other users on my website. For example, my opinions regarding certain technologies, tutorials of how to use particular software or toolbox, and explainations on topics in the field that I study or interested in.</p>
+
+<p>On a daily basis, I searched for informations that could potentially help with projects that I worked on. However, often times it was hard to find the exact one article or document that would contain all of the informations I needed. I ended up utilizing what I learned from multiple sources in order to make them useful. I believe this scenario happens not only just on me but many others. So I want the content from my website to be helpful to others who might work on a similar problem a I did.</p>
+
+<p>My users can gain some pratical knowledge from the projects that I had done as well as experiences that I shared. Moreover, if people have questions on certain content either about techniquical details or the topic in general, it will also provide opportunities for potential better solutions and new ideas.</p>
+
+<h2>Use Cases</h2>
+<ol>
+    <li>People who are interested in the work that I am doing can look through the publications, articles, tutorials, code examples that are posted on my website.</li>
+    <li>Someone who is working on a project in the same area might be able to find useful hands-on tutorial and pratical code examples to support him or her.</li>
+    <li>People who are studying similar topics can find some useful explainations on certain topics. For example, some math operations are hard to understand by looking at just the equations. But once combined with figures, it becomes more intuitive immediately.</li>
+</ol>
+
+<h2>Design Concept</h2>
+<h3>Audience</h3>
+People who are either studying or working in the field of computer engineering with reasonable experiences of programming and developing different applications to solve real-world problems. If they are still university students, they are most likely be junior, senior or graduate students. Also, the website is for those who are generally interested in the field of computer vision, machine learning, and robotics.  
+<h3>Reference Websites</h3>
+<ol>
+    <li><a href="https://dougblack.io/index.html">dougblack.io</a> In this website, the author posted a variety of content regarding programming. I learned how to setup the environment for the text editor - vim from his article. This directly connects with my 2nd use case.</li>
+    <li><a href="http://www.visiondummy.com/">www.visiondummy.com</a> The contents in this website are more academic related. The author provide different illustrations in explaining some difficult math and statistics concept. This connects to my 3rd use case.</li>
+    <li><a href="http://www.weizmann.ac.il/math/shimon/">www.weizmann.ac.il/math/shimon/</a> This is the info page for a professor which contains his publications and brief projects descriptions on the research work that he is doing. This connect to my 1st use case.</li>
+    <li><a href="https://chunml.github.io/ChunML.github.io/">chunml.github.io/ChunML.github.io/</a> This is probably the closest example that I can find for the portfolio website that I want to create. It connects to all three of my use cases.</li>
+    <li><a href="http://wiringpi.com/">wiringpi.com</a> Most contents from this website are programming tutorials. In fact, they all focus on one library which I believe the author create and maintain. This connects to my 2nd use case.</li>
+</ol>
+
+<h2>Presentation Information</h2>
+
+<h3>Content Synopsis</h3>
+Most of my content will be articles written in combination of text, figures, videos, and code (if you count this as a separate category). All articles will be cateogrized by the topics that they belong. 
+
+<h3>Text Outline of website organization</h3>
+<ul style="list-style-type:none">
+    <li>Home - the starting page</li>
+    <li>About Me - give a brief explainations of who I am, what I do, and what I love</li>
+    <li>Publications - where I list all the link of my papers</li>
+    <li>Projects - where I post all the past projects that I have worked on</li>
+    <li>>> project 1</li>
+    <li>>> project 2</li>
+    <li>>> ......</li>
+    <li>Tutorials - where I post articles on tutorials such as different programming tips or how to use toolbox.</li>
+    <li>>> tutorial 1</li>
+    <li>>> tutorial 2</li>
+    <li>>> ......</li>
+</ul>
+
+<h3>Wireframe of website organization</h3>
+<ul style="list-style-type:none">
+    <li><a href="https://wireframe.cc/A7o7Tx">Home</a></li>
+    <li><a href="https://wireframe.cc/ksdaDF">About Me</a></li>
+    <li><a href="https://wireframe.cc/nUOyTL">Publications</a></li>
+    <li><a href="https://wireframe.cc/MlNgC7">Projects</a></li>
+    <li>>> <a href="https://wireframe.cc/DPxBUC">project 1</a></li>
+    <li>>> ......</li>
+    <li><a href="https://wireframe.cc/MlNgC7">Tutorials</a></li>
+    <li>>> <a href="https://wireframe.cc/DPxBUC">tutorial 1</a></li>
+    <li>>> ......</li>
+</ul>
+
+<h3>Rationale for organization</h3>
+<ul>
+    <li>The main purpose for this organization is that users can get to their final destinations that they wanted within less than <b>three clicks</b>.</li>
+    <li>Each topic page corresponds to one of my use case to help my target audiences easily find the type of content they want.</li>
+    <li>The reason for this specific way of organization is that, first, audiences might want to know who I am and what I do to see whether this website might contain the content they need. Next, they can look through my publications to determine whether this is a reliable source. Finally they can enter into projects or tutorial to find their desired content.</li>
+</ul>
+  
+<h3>Media</h3>
+<p>As far as for most of the contents that are going to be post onto my website, I will most likely make the corresponding project open source as well. I will include more information once I have decided which open source license that I am going to use.</p>
+<ol>
+    <li>images</li>
+    <ul>
+        <li>Mostly I will create my own plot either by taking screenshots of my computer to write other scripts that generate the plots.</li>
+        <li>Figures are powerful tools when used for illustrating math topices.</li>
+        <li>I will not credit my sources as far as figures.</li>
+    </ul>
+    <li>videos</li>
+    <ul>
+        <li>Videos will mostly come from simulation ran and recorded from my own computer.</li>
+        <li>When describing what my project does, videos can help presenting.</li>
+        <li>Not consider to credit my sources either.</li>
+    </ul>
+</ol>
+
+<h3>Color scheme and rationale</h3>
+<ul>
+    <li>The main color theme is black and white with different level of gray and light blue for either contrast or highlight.</li>
+    <li>Here are two examples of the gray and blue color that I would like to use:
+        <table class="table">
+        <tr>
+            <th>Color</th>
+            <th>Hex</th>
+        </tr>
+        <tr>
+            <td style="background-color:#000000"></td>
+            <td>#000000</td>
+        </tr>
+        <tr>
+            <td style="background-color:#130b4c"></td>
+            <td>#130b4c</td>
+        </tr>
+        <tr>
+            <td style="background-color:#232f7d"></td>
+            <td>#232f7d</td>
+        <tr>
+            <td style="background-color:#92cdff"></td>
+            <td>#92cdff</td>
+        </tr>
+        <tr>
+            <td style="background-color:#b9eaff"></td>
+            <td>#b9eaff</td>
+        </tr>
+        <tr>
+            <td style="background-color:#f9f9f9"></td>
+            <td>#f9f9f9</td>
+        </tr>
+        <tr>
+            <td style="background-color:#cccccc"></td>
+            <td>#cccccc</td>
+        </tr>
+        <tr>
+            <td style="background-color:#bbbbbb"></td>
+            <td>#bbbbbb</td>
+        </tr>
+        <tr>
+            <td style="background-color:#aaaaaa"></td>
+            <td>#aaaaaa</td>
+        </tr>
+            </table>
+    </li>    
+    <li>The main reason for chosing this color scheme is my personal preference. And I also think light blue and light gray in general are gentle colors that make my audience feel comfortable while navigating my website.</li>
+
+</ul>
+
+</body>
+
+</html>
