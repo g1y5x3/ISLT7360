@@ -1,0 +1,13 @@
+body {background-color: #f9f9f9;
+      font-family: 'Roboto', sans-serif}
+h1 {color: #232f7d;
+    background-color: #cbf0f8;
+    border: 3px ridge #4286f5;
+    padding: 30px;}
+h2 {color: #232f7d;
+    background-color: #e9eaee;
+    border: 3px ridge #92cdff;
+    padding: 20px;}
+h3 {color: #232f7d;
+    margin-left: 20px;}
+p {margin-left: 20px;}
