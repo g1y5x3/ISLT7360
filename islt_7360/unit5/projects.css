@@ -32,6 +32,7 @@ body {
 nav { 
     position: relative;
 }
+
 ul { 
     list-style-type: none;
     overflow: hidden;
@@ -44,6 +45,7 @@ ul {
 li { 
     float: right;
 }
+
 li a { 
     font-size: 90%;
     color: #000000;
@@ -55,19 +57,19 @@ li a {
     position: relative;
 }
 
-h1 { color: #000000;
-     font-size: 250%;
-     padding-left: 30px;
+h1 { 
+    color: #000000;
+    font-size: 250%;
+    padding-left: 30px;
 }
 
-p { color: #000000;
+p { 
+    color: #000000;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 div.scrollmenu {
-    padding-top: 30px;
-    padding-bottom: 30px;
     overflow: auto;
     white-space: nowrap;
 }
