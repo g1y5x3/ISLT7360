@@ -30,7 +30,9 @@ p30(4.5)
 
 # Illustration:
 xp = np.linspace(-2, 6, 100)
-_ = plt.plot(x, y, '.', xp, p(xp), '-', xp, p30(xp), '--')
+plt.plot(x, y, '.', linewidth=5)
+plt.plot(xp, p(xp), '-', linewidth=5)
+plt.plot(xp, p30(xp), '--', linewidth=5)
 plt.ylim(-2,2)
 plt.xlabel("X")
 plt.ylabel("Y")
