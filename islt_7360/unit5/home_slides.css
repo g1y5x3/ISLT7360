@@ -1,14 +1,15 @@
-#wrapper { 
+#wrapper 
+{ 
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     color: #000000;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    word-wrap: break-word;
 }
 
-header { 
+header 
+{ 
     height: 150px;
     margin-top: 1px;
     padding-right: 5px;
@@ -18,36 +19,34 @@ header {
     word-wrap: break-word;
 }
 
-<<<<<<< HEAD
-footer {
-    background-color: #e9eaee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body { 
+footer 
+{ 
     background-color: #e9eaee;
 }
 
-nav { 
+body 
+{ 
+    background-color: #e9eaee;
+}
+
+nav 
+{ 
     position: relative;
 }
 
-ul { 
+ul 
+{ 
     list-style-type: none;
     overflow: hidden;
 }
 
-.cue {
-    font-weight: bold;
-}
-
-li { 
+li 
+{ 
     float: right;
 }
 
-li a { 
+li a 
+{ 
     font-size: 90%;
     color: #000000;
     text-align: center;
@@ -55,22 +54,23 @@ li a {
     height: 20px;
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    position: relative;
 }
 
-h1 { 
+h1 
+{ 
     color: #000000;
     font-size: 400%;
     text-align: center;
     padding: 80px 80px;
 }
 
-.fit { max-width: 95%;
-       margin: auto;
-       position: relative;
+.fit
+{
+    max-width: 80%;
 }
 
-.slider {
+.slider 
+{
     max-width: 90%;
     width: 1000px;
     height: 600px;
@@ -79,14 +79,16 @@ h1 {
     margin: auto;
 }
   
-.slides {
+.slides
+{
     display: flex;
     overflow: hidden;
     border-radius: 5px;
     scroll-behavior: smooth;
 }
 
-.slides > div {
+.slides > div 
+{
     flex-shrink: 0;
     max-width: 100%;
     width: 1000px;
@@ -100,7 +102,7 @@ h1 {
     font-size: 100px;
 }
   
-.slider > a {
+  .slider > a {
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
@@ -111,4 +113,4 @@ h1 {
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
-}
+  }
