@@ -64,7 +64,7 @@ h1 {
 
 p { 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 120%;
+    font-size: 125%;
     color: #000000;
     width: 70%;
     margin: auto;
@@ -74,4 +74,8 @@ p {
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
+}
+
+p img {
+    width: 95%;
 }
