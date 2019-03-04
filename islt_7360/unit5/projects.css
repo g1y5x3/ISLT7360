@@ -9,13 +9,8 @@
 }
 
 header { 
-    height: 150px;
-    margin-top: 1px;
-    padding-right: 5px;
-    background-repeat: no-repeat;
-    background-image: url(PilotSite/website_logo.jpg);
-    background-size: 250px;
-    word-wrap: break-word;
+    padding-top: 5px;
+    padding-right: 15px;
 }
 
 footer {
@@ -30,6 +25,7 @@ body {
 }
 
 nav { 
+    float: right;
     position: relative;
 }
 

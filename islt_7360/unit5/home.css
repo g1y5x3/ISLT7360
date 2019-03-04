@@ -9,13 +9,8 @@
 }
 
 header { 
-    height: 150px;
-    margin-top: 1px;
-    padding-right: 5px;
-    background-repeat: no-repeat;
-    background-image: url(PilotSite/website_logo.jpg);
-    background-size: 250px;
-    word-wrap: break-word;
+    padding-top: 5px;
+    padding-right: 15px;
 }
 
 footer {
@@ -30,6 +25,7 @@ body {
 }
 
 nav { 
+    float: right;
     position: relative;
 }
 
@@ -59,15 +55,17 @@ li a {
 
 h1 { 
     color: #000000;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 400%;
     font-style: italic;
     text-align: center;
     padding: 80px 80px;
 }
 
-.fit { max-width: 95%;
-       margin: auto;
-       position: relative;
+.fit { 
+    max-width: 95%;
+    margin: auto;
+    position: relative;
 }
 
 .slider {
