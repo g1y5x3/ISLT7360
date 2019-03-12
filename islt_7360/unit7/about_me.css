@@ -58,8 +58,34 @@ h1 {
     font-size: 250%;
     width: 70%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     margin: auto;
+}
+
+div.scrollmenu {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h2 {
+    width: 70%;
+    margin: auto;
+}
+
+h3 {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
 p { 
@@ -68,12 +94,12 @@ p {
     color: #000000;
     width: 70%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-div.scrollmenu {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    overflow: auto;
-    white-space: nowrap;
+hr {
+    margin-top: 50px;
+    width: 70%
 }
+
