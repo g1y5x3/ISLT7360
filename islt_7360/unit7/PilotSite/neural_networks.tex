@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\begin{document}
+\pagestyle{empty}
+
+\def\layersep{2.5cm}
+
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=25pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    % leave the '\foreach' there for reference used for future projects
+    \foreach \name / \y in {1}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[input neuron, pin=left:input \#1] (I-1) at (0,-2) {$x_1(k)$};
+    \foreach \name / \y in {2}
+        \node[input neuron, pin=left:input \#2] (I-2) at (0,-3) {$x_2(k)$};
+        
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1}
+        \path
+            node[hidden neuron] (H-1) at (\layersep,-\y cm) {$y^1_1$};
+    \foreach \name / \y in {2}
+        \path
+            node[hidden neuron] (H-2) at (2.5,-\y cm) {$y^1_2$};
+    \foreach \name / \y in {3}
+        \path
+            node[hidden neuron] (H-3) at (2.5,-\y cm) {$y^1_3$};    
+    \foreach \name / \y in {4}
+        \path
+            node[hidden neuron] (H-4) at (2.5,-\y cm) {$y^1_4$};
+            
+    % Draw the output layer node
+    \node[output neuron,pin={[pin edge={->}]right:Output}] (O) at (5, -2.5) {$y^{out}$};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \draw[->] (I-1) -- (H-1) node[pos=.5,sloped,above] {$w^1_{11}$};        
+    \draw[->] (I-1) -- (H-2);        
+    \draw[->] (I-1) -- (H-3);       
+    \draw[->] (I-1) -- (H-4);       
+    \draw[->] (I-2) -- (H-1);       
+    \draw[->] (I-2) -- (H-2);       
+    \draw[->] (I-2) -- (H-3);       
+    \draw[->] (I-2) -- (H-4) node[pos=.5,sloped,below] {$w^1_{42}$};        
+
+    \draw[->] (H-1) -- (O) node[pos=.5,sloped,above] {$w^{o}_{o1}$};        
+    \draw[->] (H-2) -- (O);        
+    \draw[->] (H-3) -- (O);        
+    \draw[->] (H-4) -- (O) node[pos=.5,sloped,below] {$w^{o}_{o4}$};        
+    
+    % Annotate the layers
+    \node[annot,above of=H-1, node distance=1cm] (hl) {Hidden layer};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl] {Output layer};
+\end{tikzpicture}
+% End of code
+\end{document}
