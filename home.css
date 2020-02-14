@@ -63,7 +63,8 @@ h1 {
 }
 
 .fit { 
-    max-width: 95%;
+    width: 60%;
+    height: 100%;
     margin: auto;
     position: relative;
 }
